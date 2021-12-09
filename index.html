@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I LOVE Y</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+
+        }
+
+        #yeuEm {
+            margin-top: 400px;
+            font-size: 25px;
+            color: pink;
+            font-family: 'Courier New', Courier, monospace;
+            transition: width 2s, height 2s, transform 2s;
+
+        }
+
+        #yeuEm:hover {
+            width: 300px;
+            height: 300px;
+            transform: rotate(360deg);
+        }
+
+        #mybtn {
+            position: relative;
+            font-size: 30px;
+            font-weight: 900;
+            color: red;
+            width: 300px;
+            height: 100px;
+            border-radius: 20px;
+            border: none;
+            background-color: pink;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="mybtn">Bấm nè</button>
+
+    <span id="yeuEm"></span>
+
+    <script>
+        let btn = document.getElementById("mybtn");
+        btn.addEventListener("click", anhYeuEm = () => {
+            for (let i = 0; i < 1; i++) {
+                document.getElementById("yeuEm").innerHTML += "<br/>😘 Anh yêu em nhiều lắm 😘 <br/>"
+            }
+        })
+    </script>
+</body>
+
+</html>
